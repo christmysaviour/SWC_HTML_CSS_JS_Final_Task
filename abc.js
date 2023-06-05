@@ -1,4 +1,4 @@
-function getData() {
+function getMovieData() {
     var url = 'https://api.themoviedb.org/3/movie/popular?api_key=b93f5439608f8df1ce076d0b03efaef0';
   
     fetch(url).then(function(response) {
@@ -32,7 +32,7 @@ function getData() {
       
   }
   
-  getData();
+  getMovieData();
 
 function getDataSearch(searchQuery) {
   var url = 'https://api.themoviedb.org/3/search/movie?api_key=b93f5439608f8df1ce076d0b03efaef0&query=' + encodeURIComponent(searchQuery);
